@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="script.js"></script>
+		<title>DU OnTrack</title>
+	</head>
+	
+	<!-- Allows us to grab cookie & populate those classes and colors-->
+	<body onload="colorFill(); loadCookieArray(); populate()">
+		<h4>Online Degree Tracker<br>Designed for DU Boot Camp</h4>
+		<div class="outerboxtop">
+			<div class="boxFields">
+				<!-- Input fields and buttons-->
+				<div class="InputForms">
+					<h5>Enter Class:</h5>
+					<form>
+						<input id="input" placeholder="&quot;COEN 10&quot;" type=text class="inputText" maxlength="10" onkeypress="buttonPressAdd(event)" />
+			 			<input type=button class="inputButton" id="inputButton" onclick="addCourse()" value="Add Course" name="button1" />
+                    </form>
+                    
+				</div>
+			</div>
+			<div class="boxFields">
+				<div class="InputForms">
+					<h5>Remove Class:</h5>
+					<form>
+						<input id="removeMe" placeholder="&quot;COEN 10&quot;" type=text class="inputText" maxlength="10" onkeypress="buttonPressRemove(event)"/>
+						<input type=button class="inputButton" id="removeButton" onclick="removeThis()" value="Remove Course" name="button2" />
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		
+		<br><br><br><br><br>
+
+		
+		<h2>DEGREE PROGRESS</h2>
+		<h4>Major</h4>
+		<h5>Business Analytics Major
+			For Students Entering DU in the 2020 - 2021 Academic Year</h5>
+		<!-- Includes the Major Requirements in the main table of the application -->
+		<div class="outerbox">
+			<div class="box">
+
+				<table>
+					<table>
+						<tr>
+							<th>Requirement</th>
+							<th>Fulfilled?</th> 
+						</tr>
+						<tr>
+							<td>ENGR 1</td>
+							<td name="requirement" id="ENGR 1">NO!</td> 
+						</tr>
+						<tr>
+							<td>COEN 10</td>
+							<td name="requirement" id="COEN 10">NO!</td> 
+						</tr>
+						<tr>
+							<td>COEN 11</td>
+							<td name="requirement" id="COEN 11">NO!</td> 
+						</tr>
+						<tr>
+							<td>COEN 12</td>
+							<td name="requirement" id="COEN 12">NO!</td> 
+						</tr>
+						<tr>
+							<td>COEN 19</td>
+							<td name="requirement" id="COEN 19">NO!</td> 
+						</tr>
+						<tr>
+							<td>COEN 20</td>
+							<td name="requirement" id="COEN 20">NO!</td> 
+						</tr>
+						<tr>
+							<td>COEN 21</td>
+							<td name="requirement" id="COEN 21">NO!</td> 
+						</tr>
+						<tr>
+							<td>COEN 70</td>
+							<td name="requirement" id="COEN 70">NO!</td> 
+						</tr>
+						<tr>
+							<td>COEN 122</td>
+							<td name="requirement" id="COEN 122">NO!</td> 
+						</tr>
+						<tr>
+							<td>COEN 146</td>
+							<td name="requirement" id="COEN 146">NO!</td> 
+						</tr>
+						<tr>
+							<td>COEN 171</td>
+							<td name="requirement" id="COEN 171">NO!</td> 
+						</tr>
+						<tr>
+							<td>COEN 174</td>
+							<td name="requirement" id="COEN 174">NO!</td> 
+						</tr>
+					</table>
+				</div>
+				<div class="box">
+					<table>
+						<tr>
+							<th>Requirement</th>
+							<th>Fulfilled?</th> 
+						</tr>
+						<tr>
+							<td>COEN 175</td>
+							<td name="requirement" id="COEN 175">NO!</td> 
+						</tr>
+						<tr>
+							<td>COEN 177</td>
+							<td name="requirement" id="COEN 177">NO!</td> 
+						</tr>
+						<tr>
+							<td>COEN 179</td>
+							<td name="requirement" id="COEN 179">NO!</td> 
+						</tr>
+						<tr>
+							<td>COEN 194</td>
+							<td name="requirement" id="COEN 194">NO!</td> 
+						</tr>
+						<tr>
+							<td>COEN 195</td>
+							<td name="requirement" id="COEN 195">NO!</td> 
+						</tr>
+						<tr>
+							<td>COEN 196</td>
+							<td name="requirement" id="COEN 196">NO!</td> 
+						</tr>
+						<tr>
+							<td>ELEN 50</td>
+							<td	name="requirement" id="ELEN 50">NO!</td> 
+						</tr>
+						<tr>
+							<td>ELEN 153</td>
+							<td name="requirement" id="ELEN 153">NO!</td> 
+						</tr>
+						<tr>
+							<td>T.E. I</td>
+							<td name="requirement" id="T.E. I">NO!</td> 
+						</tr>
+						<tr>
+							<td>T.E. II</td>
+							<td name="requirement" id="T.E. II">NO!</td> 
+						</tr>
+						<tr>
+							<td>T.E. III</td>
+							<td name="requirement" id="T.E. III">NO!</td> 
+						</tr>
+						<tr>
+							<td>ENGL 181</td>
+							<td name="requirement" id="ENGL 181">NO!</td> 
+						</tr>
+					</table>
+				</div>
+				<div class="box">
+					<table>
+						<tr>
+							<th>Requirement</th>
+							<th>Fulfilled?</th> 
+						</tr>
+						<tr>
+							<td>MATH 11</td>
+							<td name="requirement" id="MATH 11">NO!</td> 
+						</tr>
+						<tr>
+							<td>MATH 12</td>
+							<td name="requirement" id="MATH 12">NO!</td> 
+						</tr>
+						<tr>
+							<td>MATH 13</td>
+							<td name="requirement" id="MATH 13">NO!</td> 
+						</tr>
+						<tr>
+							<td>MATH 14</td>
+							<td name="requirement" id="MATH 14">NO!</td> 
+						</tr>
+						<tr>
+							<td>CHEM 11</td>
+							<td name="requirement" id="CHEM 11">NO!</td> 
+						</tr>
+						<tr>
+							<td>PHYS 31</td>
+							<td name="requirement" id="PHYS 31">NO!</td> 
+						</tr>
+						<tr>
+							<td>PHYS 32</td>
+							<td	name="requirement" id="PHYS 32">NO!</td> 
+						</tr>
+						<tr>
+							<td>PHYS 33</td>
+							<td name="requirement" id="PHYS 33">NO!</td> 
+						</tr>
+						<tr>
+							<td>MATH 53</td>
+							<td name="requirement" id="MATH 53">NO!</td> 
+						</tr>
+						<tr>
+							<td>AMTH 106</td>
+							<td name="requirement" id="AMTH 106">NO!</td> 
+						</tr>
+						<tr>
+							<td>AMTH 108</td>
+							<td name="requirement" id="AMTH 108">NO!</td> 
+						</tr>
+					</table>
+				</div>
+			</div>
+		
+		
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		</table>	
+		<!-- Includes the table the stores the requirements for core requirements -->
+		<h4>Core Curriculum</h4>
+			<div class = "outerbox">
+				<div class="box">
+					<table>
+						<tr>
+							<th>Requirement</th>
+							<th>Fulfilled?</th> 
+						</tr>
+						<tr>
+							<td>C&amp;I I</td>
+							<td name="requirement" id="CandI I">NO!</td> 
+						</tr>
+						<tr>
+							<td>C&amp;I II</td>
+							<td name="requirement" id="CandI II">NO!</td> 
+						</tr>
+						<tr>
+							<td>C&amp;I III</td>
+							<td name="requirement" id="CandI III">NO!</td> 
+						</tr>
+						<tr>
+							<td>DIVERSITY</td>
+							<td name="requirement" id="DIVERSITY">NO!</td> 
+						</tr>
+					</table>
+				</div>
+				<div class="box">
+					<table>
+						<tr>
+							<th>Requirement</th>
+							<th>Fulfilled?</th> 
+						</tr>
+						<tr>
+							<td>RTC I</td>
+							<td name="requirement" id="RTC I">NO!</td> 
+						</tr>
+						<tr>
+							<td>RTC II</td>
+							<td name="requirement" id="RTC II">NO!</td> 
+						</tr>
+						<tr>
+							<td>RTC III</td>
+							<td name="requirement" id="RTC III">NO!</td> 
+						</tr>
+						<tr>
+							<td>ETHICS</td>
+							<td name="requirement" id="ETHICS">NO!</td> 
+						</tr>
+					</table>
+				</div>
+				<div class="box">
+					<table>
+						<tr>
+							<th>Requirement</th>
+							<th>Fulfilled?</th> 
+						</tr>
+						<tr>
+							<td>CTW I</td>
+							<td name="requirement" id="CTW I">NO!</td> 
+						</tr>
+						<tr>
+							<td>CTW II</td>
+							<td name="requirement" id="CTW II">NO!</td> 
+						</tr>
+						<tr>
+							<td>ELSJ</td>
+							<td name="requirement" id="ELSJ">NO!</td> 
+						</tr>
+						<tr>
+							<td>SOC SCI</td>
+							<td name="requirement" id="SOC SCI">NO!</td> 
+						</tr>
+					</table>
+				</div>
+			</div>
+	
+	
+			<br><br><br><br><br><br><br>
+			
+			<!-- Includes the table that is where the electives will populate -->
+			<h4>Electives</h4>
+			<div class = "outerboxbottom">
+				<div class="box">
+					<table style="width:5%" id="electiveTable">
+						<tr id ="electiveRow"></tr>
+					</table>
+				</th>
+			</table>
+			<br>
+				<div class="outerboxtop">
+					<input type=button class="inputButton" value ="Clear All Classes" onclick="clearCourses()"/>
+				</div>
+
+				<br><br>
+				
+				<table class="legend">
+					<tr>
+						<td>LEGEND</td>
+							<td id="Incomplete">Incomplete</td>
+							<td id="Satisfied">Satisfied</td>
+							<td id="Double">Double Dip   </td>
+					</tr>
+				</table>
+			</div>
+		</div>		
+	</body>
+</html>

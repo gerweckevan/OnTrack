@@ -1,0 +1,26 @@
+{
+  "name": "ontrack",
+  "version": "1.0.0",
+  "description": "A simple app to plan out your career and classes to be able to view progress in your degree to make sure your professional life stays OnTrack!",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gerweckevan/OnTrack.git"
+  },
+  "author": "gerweckevan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gerweckevan/OnTrack/issues"
+  },
+  "homepage": "https://github.com/gerweckevan/OnTrack#readme"
+}
