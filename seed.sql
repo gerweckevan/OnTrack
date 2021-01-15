@@ -5,7 +5,7 @@ INSERT INTO Courses (name, degree_program, type, credits, pre_req)
 VALUES ("FSEM 1111", "Business Analytics", "University Common Curriculum Requirement", "4", "None"), 
 ("WRIT 1122", "Business Analytics", "University Common Curriculum Requirement", "4", "FSEM"),
 ("WRIT 1133", "Business Analytics", "University Common Curriculum Requirement", "4", "WRIT 1122"),
-("Foreign Language Sequence", "Business Analytics", "University Common Curriculum Requirement", "4-12", "None"),
+("Foreign Language Sequence", "Business Analytics", "University Common Curriculum Requirement", "4-12", "N/A"),
 ("AI Society (two different disciplines)", "Business Analytics", "University Common Curriculum Requirement", "8", "None"),
 ("MATH 1200 or 1951 (fulfills AI Natural)", "Business Analytics", "University Common Curriculum Requirement", "4", "None"),
 ("ECON 1020 (fulfills first SI Society", "Business Analytics", "University Common Curriculum Requirement", "4", "None"),
@@ -48,3 +48,24 @@ VALUES ("FSEM 1111", "Business Analytics", "University Common Curriculum Require
 ("International Experience Course (if not studying abroad)", "Business Analytics", "General Elective (Including Minors)", "4", "None");
 
 -- Computer Science Course Curriculum -- 
+INSERT INTO Courses (name, degree_program, type, credits, pre_req, notes)
+VALUES ("COMP 1671", "Computer Science", "Computer Science Major Requirement", "4", "High School Algebra", "Course counts toward the Analytical Inquiry: The Natural and Physical World Requirement"),  
+("COMP 1672", "Computer Science", "Computer Science Major Requirement", "4", "COMP 1671"), 
+("COMP 2673", "Computer Science", "Computer Science Major Requirement", "4", "COMP 1672 or COMP 1771"), 
+("COMP 2300", "Computer Science", "Computer Science Major Requirement", "1-4", "None", "If this course is used towards the MATH minor, it must be replaced with a 2000-level or above COMP elective, i.e. the total number of COMP credits, including COMP 2300 should equal 60 when there are only 16 hours of MATH minor credits"), 
+("COMP 2355", "Computer Science", "Computer Science Major Requirement", "4", "COMP 2673"), 
+("COMP 2370", "Computer Science", "Computer Science Major Requirement", "4", "MATH 2200 or COMP 2300 & COMP 2673"), 
+("COMP 2691", "Computer Science", "Computer Science Major Requirement", "4", "None"), 
+("COMP 3351", "Computer Science", "Computer Science Major Requirement", "4", "COMP 2370, COMP 2691 & COMP 2355"), 
+("COMP 3361", "Computer Science", "Computer Science Major Requirement", "4", "COMP 2355, COMP 2370 & COMP 2691 or for MS Cybersecurity COMP 3001, 3002, 3003, 3004, COMP 4355 & COMP 4370"),
+("Complete 20 credits of 3000-level computer science courses.", "Computer Science", "Computer Science Major Elective Requirement", "20", "N/A", "COMP 3904 Internship/Co-Op in Computing may not be used to satisfy 3000-level computer science elective credits."),
+("First-Year Seminar", "Computer Science", "University Common Curriculum Requirement", "4", "N/A"), 
+("Writing and Rhetoric", "Computer Science", "University Common Curriculum Requirement", "8", "N/A"), 
+("Languages", "Computer Science", "University Common Curriculum Requirement", "4-12", "N/A"),
+("Analytical Inquiry: The Natural and Physical World", "Computer Science", "University Common Curriculum Requirement", "4", "N/A"),
+("Analytical Inquiry: Society and Culture", "Computer Science", "University Common Curriculum Requirement", "8", "N/A"),
+("Scientific Inquiry: The Natural and Physical World", "Computer Science", "University Common Curriculum Requirement", "12", "N/A"),
+("Scientific Inquiry: Soceity and Culture", "Computer Science", "University Common Curriculum Requirement", "8", "N/A"),
+("Advanced Seminar", "Computer Science", "University Common Curriculum Requirement", "4", "N/A"),
+("Minor 1", "Computer Science", "University Common Curriculum Requirement", "15-28", "N/A"),
+("Minor 2", "Computer Science", "University Common Curriculum Requirement", "15-28", "N/A");
