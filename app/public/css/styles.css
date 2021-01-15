@@ -1,107 +1,44 @@
-body {
-  background-color: rgb(210, 215, 211);
-}
-h4 {
-  color: Black;
-  text-align: center;
-  font-size: 18px;
-  margin-bottom: 10px;
-  margin-top: 15px;
-}
-p {
-  font-family: verdana;
-  font-size: 20px;
-}
-h5 {
-  color: blue;
-  text-align: center;
-  margin-bottom: 4px;
-  margin-top: 4px;
-  font-size: 22px;
-}
-h2 {
-  text-align: center;
-  height: 10px;
-  margin-top: 0px;
-  font-size: 20px;
-}
-td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-  font-size: 16px;
-  border-width: 2px;
-  background-color: white;
-}
-th {
-  border: 1px solid black;
-  border-collapse: collapse;
-  border: none;
-}
-input {
-  align-content: center;
-  text-align: center;
-  align-self: center;
+.all {
+  background-color: #8b2332;
 }
 
-form {
+h1 {
+  font-family: sans-serif;
+  color: #111;
+  font-size: 300px;
+  font-weight: bolder;
+  letter-spacing: -1px;
+  line-height: 1;
   text-align: center;
+  background-color: #0d3040;
 }
-table {
-  border: 1px solid black;
-  border-collapse: collapse;
-  background-color: "rgb(0,255,255)";
-  border: none;
+
+h5 {
+  color: #111;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 300px;
+  font-weight: bolder;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+  background-color: #8b2332;
+}
+
+h6 {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.card-section {
+  background-color: #8b6f4b;
+  border-radius: 25px;
+}
+
+.footer {
+  height: 90px;
+  background-color: #0d3040;
+  position: absolute;
+  bottom: 0;
   width: 100%;
-}
-.inputButton {
-  font-size: 16px;
-  height: 25px;
-  border-radius: 10px;
-  background-color: white;
-}
-.box {
-  float: left;
-  width: 200px;
-  height: 100px;
-  margin: auto;
-  width: 20%;
-  padding-right: 30px;
-}
-.boxFields {
-  float: left;
-  width: 200px;
-  height: 10px;
-  margin: auto;
-  width: 20%;
-  padding-right: 30px;
-}
-.outerbox {
-  width: 100%;
-  margin-left: 20%;
-  margin-right: 50%;
-}
-.outerboxbottom {
-  width: 100%;
-  margin-left: 40%;
-  margin-right: 40%;
-  height: 40px;
-}
-.outerboxtop {
-  width: 100%;
-  margin-left: 30%;
-  margin-right: 50%;
-  align-content: center;
-  height: 1px;
-}
-.inputText {
-  height: 30px;
-  font-size: 14px;
-  border-radius: 12px;
-}
-.InputForms {
-  background-color: rgb(210, 215, 211);
-}
-.electiveTable {
-  align-content: right;
+  height: 4rem;
 }
