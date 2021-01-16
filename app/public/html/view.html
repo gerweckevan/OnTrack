@@ -4,31 +4,47 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/OnTrack/app/public/css/styles.css" <!-- Bootsrap Link -->
+	<link rel="stylesheet" href="/app/public/css/styles.css">
+
+	 <!-- Bootsrap Link -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 	<!-- Compressed CSS Foundation Framework Link -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
 		integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+
+	<!-- Google font link -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+
 	<title>OnTrack</title>
 </head>
 
 <body class="all">
-	<h1>OnTrack</h1>
+	
 	<main>
+		<h1 class="app-title">OnTrack</h1>
+		
+		<div class="logo-box">
+			<img src="/app/assets/university-of-denver-vector-logo.png" class="du-logo">
+
+
+
+
+		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<h6>University of Denver</h6>
+					<h6 class="sub-title">Your Degree:</h6>
 				</div>
 				<div class="col">
-					Degree: User Input
+					 <h6 class="sub-title">User Input</h6>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col">
-					<h6>Classes Needed</h6>
+					<h6 class="sub-title">Classes Needed</h6>
 					<div class="card-section">
 						<ul>
 							<li><input id="item1" type="checkbox"></input><label for="item1"></label>Item 1</li>
@@ -37,24 +53,52 @@
 							<li><input id="item4" type="checkbox"></input><label for="item4"></label>Item 4</li>
 							<li><input id="item5" type="checkbox"></input><label for="item5"></label>Item 5</li>
 							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 6</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 7</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 8</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 9</li>
+							<!-- <li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 10</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 11</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 12</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 13</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 14</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 15</li>
+							<li><input id="item1" type="checkbox"></input><label for="item1"></label>Item 16</li>
+							<li><input id="item2" type="checkbox"></input><label for="item2"></label>Item 17</li>
+							<li><input id="item3" type="checkbox"></input><label for="item3"></label>Item 18</li>
+							<li><input id="item4" type="checkbox"></input><label for="item4"></label>Item 19</li>
+							<li><input id="item5" type="checkbox"></input><label for="item5"></label>Item 20</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 21</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 22</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 23</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 24</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 25</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 26</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 27</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 28</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 29</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 30</li> -->
+							
+							
+							
+							
+							
 						</ul>
 					</div>
 				</div>
 				<div class="col">
-					<h6>Current Classes</h6>
+					<h6 class="sub-title">Current Classes</h6>
 					<div class="card-section">
 						<ul>
 							<li><input id="item1" type="checkbox"></input><label for="item1"></label>Item 1</li>
 							<li><input id="item2" type="checkbox"></input><label for="item2"></label>Item 2</li>
 							<li><input id="item3" type="checkbox"></input><label for="item3"></label>Item 3</li>
 							<li><input id="item4" type="checkbox"></input><label for="item4"></label>Item 4</li>
-							<li><input id="item5" type="checkbox"></input><label for="item5"></label>Item 5</li>
-							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 6</li>
+							
 						</ul>
 					</div>
 				</div>
 				<div class="col">
-					<h6>Completed Classes</h6>
+					<h6 class="sub-title">Completed Classes</h6>
 					<div class="card-section">
 						<ul>
 							<li><input id="item1" type="checkbox"></input><label for="item1"></label>Item 1</li>
@@ -63,6 +107,30 @@
 							<li><input id="item4" type="checkbox"></input><label for="item4"></label>Item 4</li>
 							<li><input id="item5" type="checkbox"></input><label for="item5"></label>Item 5</li>
 							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 6</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 7</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 8</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 9</li>
+							<!-- <li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 10</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 11</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 12</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 13</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 14</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 15</li>
+							<li><input id="item1" type="checkbox"></input><label for="item1"></label>Item 16</li>
+							<li><input id="item2" type="checkbox"></input><label for="item2"></label>Item 17</li>
+							<li><input id="item3" type="checkbox"></input><label for="item3"></label>Item 18</li>
+							<li><input id="item4" type="checkbox"></input><label for="item4"></label>Item 19</li>
+							<li><input id="item5" type="checkbox"></input><label for="item5"></label>Item 20</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 21</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 22</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 23</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 24</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 25</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 26</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 27</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 28</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 29</li>
+							<li><input id="item6" type="checkbox"></input><label for="item6"></label>Item 30</li> -->
 						</ul>
 					</div>
 				</div>
@@ -72,11 +140,15 @@
 		<div class="footer">
 
 			<ul class="menu align-center">
-				<li><a href="">University Scorecard</a></li>
+				
 
-				<li><a href="">SignOut</a></li>
+				<li><a href="/app/assets/business-analytics-bachelors-degree-plan-2020-2021.pdf" target="blank" style="color: black;">Business Analytics</a></li>
+
+				<li><a href="/app/assets/computer-science-degree-plan.pdf" target="blank" style="color: black;">Computer Science</a></li>
+
+				<li><a href="" style="color: black;">SignOut</a></li>
 			</ul>
-			<h6>Easily stay on top of your degree progress.</h6>
+			
 		</div>
 	</main>
 

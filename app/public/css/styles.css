@@ -1,16 +1,42 @@
 .all {
   background-color: #8b2332;
+  height: auto;
+}
+
+.app-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 80px;
+  color: black;
+  letter-spacing: -4px;
+  line-height: 1.3;
+  padding-top: 20px;
+}
+
+.du-logo {
+  width: 250.8px;
+  height: 93.5px;
+  transform: rotate(50deg) translate(450%, 0);
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo-box {
+  padding-left: 600px;
+  margin-top: 25px;
+  height: 100px;
 }
 
 h1 {
-  font-family: sans-serif;
-  color: #111;
-  font-size: 300px;
-  font-weight: bolder;
-  letter-spacing: -1px;
-  line-height: 1;
   text-align: center;
-  background-color: #0d3040;
+  background-color: #8b6f4b;
+}
+
+h4 {
 }
 
 h5 {
@@ -29,21 +55,36 @@ h6 {
   font-weight: bolder;
 }
 
+.sub-title {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: -0.5px;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: inherit;
+}
+
 .card-section {
   background-color: #8b6f4b;
   border-radius: 25px;
+  box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, 0.2);
 }
 
 .footer {
-  height: 90px;
-  background-color: #0d3040;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 4rem;
+  background-color: #8b2332;
+  height: 40px;
+  margin-top: 10px;
+  font-weight: bold;
+  font-style: italic;
 }
 
 form.signup,
 form.login {
   margin-top: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
 }
