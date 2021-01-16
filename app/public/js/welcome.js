@@ -4,4 +4,4 @@ const orm = require('../config/orm.js');
 document.addEventListener('DOMContentLoaded', (event) => {
   if (event) {
     console.info('DOM loaded');
-  }
+  };
