@@ -4,6 +4,10 @@ $(document).ready(() => {
   const emailInput = $("input#email-input");
   const passwordInput = $("input#password-input");
 
+//members data
+  $.get("/api/user_data").then(data => {
+    $(".member-name").text(data.email);
+  });
   // When the signup button is clicked, we validate the email and password are not blank
   signUpForm.on("submit", event => {
     event.preventDefault();
