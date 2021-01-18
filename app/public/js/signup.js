@@ -5,11 +5,11 @@ $(document).ready(() => {
   const passwordInput = $("input#password-input");
 
 //members data
-  $.get("/api/user_data").then(data => {
-    $(".member-name").text(data.email);
-  });
+  // $.get("/api/user_data").then(data => {
+  //   $(".member-name").text(data.email);
+  // });
   // When the signup button is clicked, we validate the email and password are not blank
-  signUpForm.on("submit", event => {
+$("#submit").on("submit", event => {
     event.preventDefault();
     const userData = {
       email: emailInput.val().trim(),
@@ -33,7 +33,7 @@ $(document).ready(() => {
       password: password
     })
       .then(() => {
-        window.location.replace("/members");
+        window.location.replace("/view");
         // If there's an error, handle it by throwing up a bootstrap alert
       })
       .catch(handleLoginErr);
