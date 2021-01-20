@@ -3,6 +3,10 @@
   height: auto;
 }
 
+body {
+  background-color: #8b2332;3
+}
+
 .app-title {
   font-family: "Raleway", sans-serif;
   font-weight: bolder;
@@ -19,7 +23,7 @@
   height: 93.5px;
   transform: rotate(50deg) translate(450%, 0);
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  position: absolute;
+  position: fixed;
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -29,6 +33,10 @@
   padding-left: 600px;
   margin-top: 25px;
   height: 100px;
+}
+
+.col {
+  width: 33.33%;
 }
 
 h1 {
