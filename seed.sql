@@ -69,3 +69,4 @@ VALUES ("COMP 1671", "Computer Science", "Computer Science Major Requirement", "
 ("Advanced Seminar", "Computer Science", "University Common Curriculum Requirement", "4", "N/A"),
 ("Minor 1", "Computer Science", "University Common Curriculum Requirement", "15-28", "N/A"),
 ("Minor 2", "Computer Science", "University Common Curriculum Requirement", "15-28", "N/A");
+
