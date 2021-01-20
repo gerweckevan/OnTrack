@@ -4,4 +4,8 @@ const orm = require('../config/orm.js');
 document.addEventListener('DOMContentLoaded', (event) => {
   if (event) {
     console.info('DOM loaded');
-  };
+}});
+
+document.getElementById("enter").addEventListener("click", function(){
+  window.location.replace("/signup")
+});
