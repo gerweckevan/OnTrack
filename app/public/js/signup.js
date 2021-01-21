@@ -28,14 +28,15 @@ $("#submit").on("submit", event => {
   // Does a post to the signup route. If successful, we are redirected to the members page
   // Otherwise we log any errors
   function signUpUser(email, password) {
+    console.log('signingupuser')
     $.post("/api/signup", {
       email: email,
       password: password
     })
-      .then(() => {
-        window.location.replace("/view");
+      // .then(() => {
+        // window.location.replace("/view");
         // If there's an error, handle it by throwing up a bootstrap alert
-      })
+      // })
       .catch(handleLoginErr);
   }
 

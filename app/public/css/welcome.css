@@ -70,3 +70,19 @@ footer {
 #mainPage{
   background-color: transparent;
 }
+
+h1 {
+  color: #8B2332;
+ font-size: 50px;
+ font-weight: bold;
+-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+#desc {
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #8B6F4B;
+}
