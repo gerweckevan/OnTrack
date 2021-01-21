@@ -1,6 +1,6 @@
 // Requiring our models and passport as we've configured it
-const db = require("../../nodelogin/models");
-const passport = require("../../nodelogin/config/passport");
+const db = require("../models");
+const passport = require("../config/passport.js");
 
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
@@ -21,7 +21,8 @@ module.exports = function(app) {
     console.log('/api/signup')
     db.User.create({
       email: req.body.email,
-      password: req.body.password
+      password: req.body.password,
+      majorID: req.body.major
     })
       .then(() => {
         console.log('redirecting')

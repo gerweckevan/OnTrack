@@ -3,42 +3,36 @@
 // Requiring Courses model
 const db = require('../models');
 
+ // 1. Create user table - New user
+ //    returns the new user object - userID
+ // 2. FindAll from buisnessCourse table where major = UserMajorID
+ //    then returns all courses for that major
+ //    now you have UserInfo(userid) major's info (courses and coursID)
+ // 3. Create in userCourse w/ forgein keys of UserID and MajorID
 // Routes
 module.exports = app => {
 
     // Get all courses for userProgram with status 'Not Complete' and return results as JSON
     app.get('/api/not-complete', (req, res) => {
-        db.Course.findAll({
+        db.UserCourses.findAll({
             where: {
-                degree_program: userProgram,
-                status: 'Not Complete',
-            }
-        }).then((result) => res.json(result));
-    });
-
-    // Get all courses for userProgram with status 'In Progress' and return results as JSON
-    app.get('/api/in-progress', (req, res) => {
-        db.Course.findAll({
-            where: {
-                degree_program: userProgram,
-                status: "In Progress",
+                status: false,
             }
         }).then((result) => res.json(result));
     });
 
     // Get all courses for userProgram with status 'Complete' and return results as JSON
     app.get('/api/complete', (req, res) => {
-        db.Course.findAll({
+        db.UserCourses.findAll({
             where: {
-                degree_program: userProgram,
-                status: "Complete",
+                status: true,
             }
         }).then((result) => res.json(result));
     });
 
     // Update status of course and return results as JSON
-    app.put('/api/courses', (req, res) => {
-        db.Course.update(
+    app.put('/api/progress', (req, res) => {
+        db.UserCourses.update(
             {
                 status: req.body.status,
             },
