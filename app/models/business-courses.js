@@ -5,6 +5,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       credits: DataTypes.STRING,
       pre_req: DataTypes.STRING,
+      status: { type: DataTypes.BOOLEAN, defaultValue: false },
       createdAt: {
         type: DataTypes.DATE,
         defaultValue: sequelize.literal("CURRENT_TIMESTAMP"),

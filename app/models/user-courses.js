@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       credits: DataTypes.STRING,
       pre_req: DataTypes.STRING,
-      status: { type: DataTypes.STRING, defaultValue: "Not Complete" },
+      status: { type: DataTypes.BOOLEAN, defaultValue: false },
       letter_grade: { type: DataTypes.STRING, defaultValue: null },
       credits_received: { type: DataTypes.INTEGER, defaultValue: null },
       notes: { type: DataTypes.STRING, defaultValue: null },
