@@ -1,4 +1,4 @@
-const connection = require('./connection.js');
+const connection = require('./config.json');
 
 // Helper function for SQL syntax to add question marks (?, ?, ?) in query
 const printQuestionMarks = (num) => {
