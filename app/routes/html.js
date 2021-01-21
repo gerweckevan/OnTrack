@@ -12,6 +12,10 @@ app.get("/signUp", function(req, res){
 app.get("/members", function(req, res){
     res.render("members")
 })
+app.get("/logout", function(req, res){
+    res.render("logout")
+})
+
 
 }
 
