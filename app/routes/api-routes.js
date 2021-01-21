@@ -14,7 +14,11 @@ module.exports = app => {
 
     // Get all courses for userProgram with status 'Not Complete' and return results as JSON
     app.get('/api/incomplete', (req, res) => {
-        db.Business_Course.findAll({}).then((result) => res.json(result));
+        db.Business_Course.findAll({
+            where: {
+                status: false,
+            }
+        }).then((result) => res.json(result));
     });
 
     // Get all courses for userProgram with status 'Complete' and return results as JSON

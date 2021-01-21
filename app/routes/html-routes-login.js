@@ -11,6 +11,7 @@ module.exports = function(app) {
       res.redirect("/members");
     }
     res.sendFile(path.join(__dirname, "../views/members/handlebars"));
+  })
 
   app.get("/login", (req, res) => {
     // If the user already has an account send them to the members page
@@ -25,4 +26,5 @@ module.exports = function(app) {
   app.get("/members", isAuthenticated, (req, res) => {
     res.sendFile(path.join(__dirname, "../views/members.handlebars"));
   });
-};
+  
+}

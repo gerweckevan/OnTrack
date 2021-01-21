@@ -135,9 +135,9 @@ document.addEventListener('DOMContentLoaded', (e) => {
       // newInputRow.appendChild(delBtn);
       newInputRow.appendChild(completeBtn);
   
-      if (course.status) {
-        rowSpan.style.textDecoration = 'line-through';
-      }
+      // if (course.status) {
+      //   rowSpan.style.textDecoration = 'line-through';
+      // }
   
       return newInputRow;
     };
@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
         id: e.target.dataset.id,
       };
       currentCourse.status = !currentCourse.status;
-      spanEl.style.textDecoration = 'line-through';
+      // spanEl.style.textDecoration = 'line-through';
       updateCourse(currentCourse);
       console.log('toggleComplete -> currentCourse', currentCourse);
     };
