@@ -41,16 +41,16 @@ app.set('view engine', 'handlebars');
 var mysql = require("mysql");
 var connection ;
 
-if (process.env.JAWSDB_URL) {
-  connection = mysql.createConnection(process.env.JAWSDB_URL);
-} else {
-  connection = mysql.createConnection ({
-    host: "localhost",
-    user: "root",
-    password: process.env.DB_PASSWORD,
-    database: "sequelize_program_library"
-  })
-}
+// if (process.env.JAWSDB_URL) {
+//   connection = mysql.createConnection(process.env.JAWSDB_URL);
+// } else {
+//   connection = mysql.createConnection ({
+//     host: "localhost",
+//     user: "root",
+//     password: process.env.DB_PASSWORD,
+//     database: "sequelize_program_library"
+//   })
+// }
 
 // Routes
 require("./app/routes/html.js")(app);
