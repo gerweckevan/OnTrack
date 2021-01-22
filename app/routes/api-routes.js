@@ -3,7 +3,7 @@
 // Requiring Courses model
 const db = require('../models');
 
- // 1. Create user table - New user
+// 1. Create user table - New user
  //    returns the new user object - userID
  // 2. FindAll from buisnessCourse table where major = UserMajorID
  //    then returns all courses for that major
@@ -13,8 +13,8 @@ const db = require('../models');
 module.exports = app => {
 
     // Get all courses for userProgram with status 'Not Complete' and return results as JSON
-    app.get('/api/not-complete', (req, res) => {
-        db.UserCourses.findAll({
+    app.get('/api/incomplete', (req, res) => {
+        db.Business_Course.findAll({
             where: {
                 status: false,
             }
@@ -23,16 +23,17 @@ module.exports = app => {
 
     // Get all courses for userProgram with status 'Complete' and return results as JSON
     app.get('/api/complete', (req, res) => {
-        db.UserCourses.findAll({
+        db.Business_Course.findAll({
             where: {
                 status: true,
+                // type: "Business Core Requirement",
             }
         }).then((result) => res.json(result));
     });
 
     // Update status of course and return results as JSON
-    app.put('/api/progress', (req, res) => {
-        db.UserCourses.update(
+    app.put('/api/courses', (req, res) => {
+        db.Business_Course.update(
             {
                 status: req.body.status,
             },
@@ -44,10 +45,9 @@ module.exports = app => {
 
     // Delete course
     app.delete('/api/courses/:id', (req, res) => {
-        db.Course.destroy({
+        db.Business_Course.destroy({
             where: {id: req.params.id}
         }).then((result) => res.json(result))
     });
-
 };
 
