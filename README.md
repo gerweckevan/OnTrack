@@ -11,8 +11,8 @@
 * [License](##-License)
  
 ## Deployed site
-[DU ON Track](https://du-on-track.herokuapp.com/)
-![gif for site](gif-link)
+[DU ON Track](https://gentle-brook-68093.herokuapp.com/)
+![gif for site](app\assets\OnTrack.gif)
  
 ## User Story
 AS A Denver University student. I WANT an app that will track my classes and the requirements for my degree in order to graduate on time.
